@@ -32,12 +32,12 @@
     
     <!-- start navbar.html -->
     <div class="navbar-fixed z-depth-3">
-      <nav class="" role="navigation">
-        <div class="my-navbar"><a id="logo-container" href="#" class="brand-logo">Natassja Ryan</a>
+      <nav class="blue" role="navigation">
+        <div class="my-navbar"><a id="logo-container" href="#" class="brand-logo">FlippantFlix</a>
           <ul class="desktop-links">
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">Three</a></li>
           </ul>
     
           <ul id="nav-mobile" class="side-nav">
@@ -50,17 +50,86 @@
     <!-- end navbar.html -->
     
     
+    
+    
+    
+    <!--gallery.html-->
+    
+    <div class="blue lighten-4 section gallery">
+        <div class="container">
+    
+            <!--gallery header-->
+            <div class="row">
+                <div class="center-align script-font">
+                    <h1>The Videos</h1>
+                </div>
+            </div>
+    
+            <!-- first row of images-->
+            <div class="row">
+                <!--image 1-->
+                <div class="col m6">
+    
+                  <!-- Dropdown Trigger -->
+                   <a class='blue dropdown-button btn-large' href='#' data-activates='dropdown1'>How To Get Away With Murder</a>
+    
+                   <!-- Dropdown Structure -->
+                   <ul id='dropdown1' class='dropdown-content'>
+                     <li><a class="blue-text modal-trigger video-select" href="#videoModal" data="d1">one</a></li>
+    
+                     <li class="blue divider"></li>
+    
+                   </ul>
+    
+                </div>
+    
+                <div class="col m6">
+    
+                  <!-- Dropdown Trigger -->
+                   <a class='blue dropdown-button btn-large' href='#' data-activates='dropdown1'>Westworld</a>
+    
+                   <!-- Dropdown Structure -->
+                   <ul id='dropdown1' class='dropdown-content'>
+                     <li><a class="blue-text modal-trigger video-select" href="#videoModal" data="d1">one</a></li>
+                    <li class="blue divider"></li>
+                     <li><a class="blue-text modal-trigger video-select" href="#videoModal" data="d2">two</a></li>
+                     <li class="blue divider"></li>
+                     <li><a class="blue-text modal-trigger video-select" href="#videoModal" data="d3">three</a></li>
+                   </ul>
+    
+    
+                </div>
+    
+    
+    
+            </div>
+            <!--end of first row of images-->
+    
+    
+        </div>
+    </div>
+    <!--end gallery-->
+    
+    
+    <!-- Modal Structure -->
+      <div id="videoModal" class="modal">
+        <video id="nowPlaying" class="responsive-video" controls>
+        <source src="movie.mp4">
+      </video>
+      </div>
+    
+    
 
     
     <!-- start foot.html -->
     
     
     
-      <footer class="page-footer teal lighten-2">
+      <footer class="page-footer blue">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              
+    
             </div>
             <div class="col l3 s12">
               <h5 class="white-text">Settings</h5>
@@ -82,9 +151,9 @@
             </div>
           </div>
         </div>
-        <div class="footer-copyright teal lighten-1">
+        <div class="footer-copyright blue lighten-1">
           <div class="container">
-          Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    
           </div>
         </div>
       </footer>
@@ -100,10 +169,8 @@
     <!-- endinject -->
     
     <script>
-    $(document).ready(function(){
-     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-     $('.modal-trigger').leanModal();
-    });
+    
+    
     </script>
     </body>
     </html>

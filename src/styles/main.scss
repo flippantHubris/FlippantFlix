@@ -22,7 +22,8 @@
 
 
 .gallery {
-  padding-top: 200px;
+  padding-top: 150px;
+  padding-bottom: 500px;
 }
 
 
@@ -103,7 +104,7 @@ html {
 }
 
 nav{
-  @extend .brand-primary;
+  //@extend .brand-primary;
   //@extend .teal, .lighten-2;
 }
 
