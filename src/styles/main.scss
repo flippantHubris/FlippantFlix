@@ -1,0 +1,182 @@
+@import 'components/variables';
+@import 'components/mixins';
+@import 'materialize_sass/materialize';
+@import 'components/contactcard';
+@import 'components/gallery-modal';
+@import 'components/gallery';
+@import 'materialize_sass/components/navbar';
+
+@import 'materialize_sass/components/collapsible';
+
+
+
+.collapsible{
+  @extend .collapsible;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: inherit;
+
+}
+
+
+
+
+.gallery {
+  padding-top: 200px;
+}
+
+
+
+
+html {
+    overflow: auto;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: color("teal", "accent-3");
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: color("teal", "accent-3");
+}
+
+
+ .my-hoverable {
+   transition: box-shadow .25s;
+   box-shadow: 0;
+ }
+
+ .my-hoverable:hover {
+   transition: box-shadow .25s;
+   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.01); }
+
+
+ .list-inline {
+  padding-left: 0;
+  margin-left: 0px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+
+
+.brand-primary{
+  @extend .teal, .lighten-2;
+}
+//
+// .contact-card{
+//   @extend .card;
+//
+//
+//   border-radius: 15px !important;
+// }
+
+.contact-img {
+  //@extend .circle;
+  padding: 30px;
+
+}
+
+nav{
+  @extend .brand-primary;
+  //@extend .teal, .lighten-2;
+}
+
+.make-appointment-button{
+
+
+  @extend .btn-large;
+
+
+
+
+  //@extend .teal;
+  // color: #ffffff;
+     //background-color: $brand-primary;
+  //   border-color: #7bcdca;
+  //   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  //   text-transform: uppercase;
+  //   font-weight: 700;
+     // border-radius: 3px;
+  //    font-size: 18px;
+  // padding: 20px 40px;
+
+}
+
+
+ .my-navbar{
+   @extend .nav-wrapper;
+   @extend .script-font;
+   @extend .container;
+
+   .desktop-links{
+     @extend .right;
+     @extend .hide-on-med-and-down;
+
+     a{
+       @include heading-font;
+     }
+   }
+
+ }
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+.script-font {
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+
+
+
+#index-banner{
+
+  background-image: url("../img/inc_hero_dark.jpg");
+
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+      padding-top: 300px;
+}
+
+header{
+  background-image: url("../img/inc_hero_dark.jpg");
+
+}
